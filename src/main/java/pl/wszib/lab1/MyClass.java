@@ -1,6 +1,6 @@
 package pl.wszib.lab1;
 
-public class MyClass {
+public class MyClass implements MyInterface, MyInterface2 {
     public static String staticName;
     protected static String staticName1;
     static String staticName2;
@@ -11,6 +11,7 @@ public class MyClass {
     String name2;
     private String name3;
 
+    @Override
     public void print() {
         System.out.println("Nonstatic: ");
         System.out.println("Name: " + name);
